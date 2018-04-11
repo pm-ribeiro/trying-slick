@@ -1,0 +1,58 @@
+<head>
+    <title>WHY</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $('.slick.marquee').slick({
+          autoplay: true,
+          autoplaySpeed: 1000,
+          //speed: 5000,
+          centerMode: true,
+          cssEase: 'linear',
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          variableWidth: true,
+          infinite: true,
+          initialSlide: 1,
+          arrows: false,
+          buttons: false
+        });
+      });
+    </script>
+</head>
+<body>
+  <h1>Trying Slick | Multiple Itens</h1>
+  <div class="slick marquee" id="wrapper">
+    <div class="slick-slide">
+      <div class="inner">
+        <img src="https://goo.gl/SUak3f" alt="Placeholder" width="179" height="78"/>
+      </div>
+    </div>
+    <div class="slick-slide">
+      <div class="inner">
+        <img src="https://goo.gl/oKWUyk" alt="Placeholder" width="179" height="78"/>
+      </div>
+    </div>
+    <div class="slick-slide">
+      <div class="inner">
+        <img src="https://goo.gl/2ZYDVv" alt="Placeholder" width="179" height="78"/>
+      </div>
+    </div>
+    <div class="slick-slide">
+      <div class="inner">
+        <img src="https://goo.gl/5kBwLR" alt="Placeholder" width="179" height="78"/>
+      </div>
+    </div>
+    <div class="slick-slide">
+      <div class="inner">
+        <img src="https://goo.gl/2vawVF" alt="Placeholder" width="179" height="78"/>
+      </div>
+    </div>
+  </div>  
+</body>

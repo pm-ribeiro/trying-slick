@@ -1,0 +1,79 @@
+<head>
+    <title>WHY</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.3.15/slick.css" />
+    
+
+
+    <script>
+      jQuery(document).ready(function($) {
+        $('.slider').slick({
+            centerMode:true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: true,
+            infinite: true,
+            cssEase: 'linear',
+            variableWidth: true,
+            variableHeight: true,
+            arrows: true,
+            dots: true
+        });
+      });
+    </script>
+
+</head>
+
+<body>
+  <h1>Trying Slick | Multiple Itens</h1>
+  <div class="slider">
+    <div class="inner" style="background-color:orange">
+      1
+    </div>
+    <div class="inner">
+      2
+    </div>
+    <div class="inner" style="background-color:orange">
+      3
+    </div>
+    <div class="inner">
+      4
+    </div>
+  
+  </div>
+</body>
+
+
+<style>
+.slider {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+.inner{
+    width: 300px;
+    height: 300px;
+    margin: auto; 
+    background-color: blue;
+    
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 40px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.slick-prev:before, .slick-next:before { 
+    color:green !important;
+}
+
+</style>
